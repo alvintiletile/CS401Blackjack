@@ -26,7 +26,7 @@
     $error = "No password given";
   }
   if ($error !== "") {
-    include('hw4_new_user_login.php');
+    include('new_user_login.php');
     exit(0);
   }
 
@@ -49,7 +49,7 @@
         $stmt->bindValue(':input_pass', $input_pass);
         $stmt->execute();
         echo "Congrats! You just registered! Please login below to continue. ";
-        include ('hw4_user_login.php');
+        include ('user_login.php');
         exit();
         //*insert*//
     } else if ($result['password'] != $input_pass) {
@@ -64,14 +64,14 @@
 
   } catch (PDOException $e) {
     $error = "Can't connect to database: " . $e->getMessage();
-    include('hw4_new_user_login.php');
+    include('new_user_login.php');
     exit(0);
   }
 
   //error validation
         if (isset($error) && $error !== "") {
             echo "ERROR: " . $error;
-            include('hw4_new_user_login.php');
+            include('new_user_login.php');
             //return to registration page to try again
             exit();
         } else if (isset($user_id)) {
@@ -80,7 +80,7 @@
             $_SESSION['id'] = $user_id;
             $_SESSION['login_user'] = $user_name;
             $_SESSION['acct_money'] = $user_money;
-            include ('hw4_successful_login.php');
+            include ('successful_login.php');
             exit();
         }
 

@@ -9,9 +9,9 @@
 
   <header>
       <ul class="navBar">
-          <li class="navBar"><a href="hw4_logout_page.php">Log Out</a></li>
-          <li class="navBar"><a href="hw4_acct_session.php">Account</a></li>
-          <li class="navBar"><a href="hw4_new_user_login.php">New User Reg</a></li>
+          <li class="navBar"><a href="logout_page.php">Log Out</a></li>
+          <li class="navBar"><a href="acct_session.php">Account</a></li>
+          <li class="navBar"><a href="new_user_login.php">New User Reg</a></li>
       </ul>
   </header>
 
@@ -19,7 +19,7 @@
     <h1>BlackJack Log-In Portal</h1>
     <p>To log in, please enter the username and password you registered with.</p>
 
-    <form name="log_in" method="post" action="hw4_db_connect.php">
+    <form name="log_in" method="post" action="db_connect.php">
       Name: <input type="text" name="user_log_in" value="<?php
           echo (isset($user_name) ? htmlspecialchars($user_name) : "");
         ?>"><br>

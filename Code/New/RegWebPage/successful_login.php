@@ -11,9 +11,9 @@ Also continues a session from db_connect.php-->
 
   <header>
       <ul class="navBar">
-          <li class="navBar"><a href="hw4_logout_page.php">Log Out</a></li>
-          <li class="navBar"><a href="hw4_acct_session.php">Account</a></li>
-          <li class="navBar"><a href="hw4_new_user_page.php">New User Reg</a></li>
+          <li class="navBar"><a href="logout_page.php">Log Out</a></li>
+          <li class="navBar"><a href="acct_session.php">Account</a></li>
+          <li class="navBar"><a href="new_user_page.php">New User Reg</a></li>
       </ul>
   </header>
 

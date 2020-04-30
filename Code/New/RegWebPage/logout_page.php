@@ -5,7 +5,7 @@
    session_start();
    if(!isset($_SESSION['id'])){
        echo "ERROR! No session detected. Page restricted." ;
-       include('hw4_user_login.php');
+       include('user_login.php');
        exit();
    }
 ?>
@@ -19,9 +19,9 @@
 
   <header>
       <ul class="navBar">
-      <li class="navBar"><a href="hw4_logout_page.php">Log Out</a></li>
-          <li class="navBar"><a href="hw4_acct_session.php">Account</a></li>
-          <li class="navBar"><a href="hw4_new_user_login.php">New User Reg</a></li>
+      <li class="navBar"><a href="logout_page.php">Log Out</a></li>
+          <li class="navBar"><a href="acct_session.php">Account</a></li>
+          <li class="navBar"><a href="new_user_login.php">New User Reg</a></li>
       </ul>
   </header>
 
@@ -33,7 +33,7 @@
     <br>Account Money: <?php echo $_SESSION['acct_money'];?>
     <br><br>Log out?<br></p>
 
-    <form name="log_out" method="post" action="hw4_logout.php">
+    <form name="log_out" method="post" action="logout.php">
     <input type="submit" name="submit" value="Log Out"></br>
 
   </body>

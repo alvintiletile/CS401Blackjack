@@ -5,7 +5,7 @@
   session_start();
   $_SESSION = array();
   session_destroy();
-  include('hw4_user_login.php');
+  include('user_login.php');
   //return to registration page to try again
   exit();
 ?>
